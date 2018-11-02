@@ -3,6 +3,12 @@
   <entry>
     <title><![CDATA[xxx]]></title>
     <url>%2F2018%2F10%2F28%2Fxxx%2F</url>
-    <content type="text"><![CDATA[简介 here 正文]]></content>
+    <content type="text"><![CDATA[简介这是简介 正文这是正文]]></content>
+      <categories>
+        <category>test</category>
+      </categories>
+      <tags>
+        <tag>test</tag>
+      </tags>
   </entry>
 </search>
