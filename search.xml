@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[software]]></title>
+    <url>%2F2018%2F11%2F07%2Fsoftware%2F</url>
+    <content type="text"><![CDATA[简介 here记录那些用过的软件。 软件集合 编辑器 notepad++ 文本编辑器，各种插件，可深度定制； vim/gvim 好用 vscode windwos推出的诚意之作 浏览器 chrome google firefox ide clion c编辑器]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[vim]]></title>
+    <url>%2F2018%2F11%2F07%2Fvim%2F</url>
+    <content type="text"><![CDATA[简介 here 正文]]></content>
+      <categories>
+        <category>vim</category>
+      </categories>
+      <tags>
+        <tag>vim</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[xxx]]></title>
     <url>%2F2018%2F10%2F28%2Fxxx%2F</url>
     <content type="text"><![CDATA[简介这是简介 正文这是正文]]></content>
