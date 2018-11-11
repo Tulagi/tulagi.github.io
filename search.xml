@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[idea快捷键]]></title>
+    <url>%2F2018%2F11%2F11%2Fidea%E5%BF%AB%E6%8D%B7%E9%94%AE%2F</url>
+    <content type="text"><![CDATA[简介记录idea系ide的快捷键 快捷键集快捷键基于Default修改1Keymap -&gt; Duplicate -&gt; Default copy for me 搜索1Ctrl + Shift + F]]></content>
+      <categories>
+        <category>idea</category>
+      </categories>
+      <tags>
+        <tag>idea 快捷键</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[idea配置]]></title>
     <url>%2F2018%2F11%2F11%2Fidea%E9%85%8D%E7%BD%AE%2F</url>
-    <content type="text"><![CDATA[简介记录idea系配置 正文配置页面(以下配置无特殊说明均是该页面)12菜单路径: File -&gt; Settings快捷键: Ctrl + Alt + S 修改字体大小12Editor -&gt; Font等宽字体: Courier New 字体大小滚轮调节1Editor -&gt; General -&gt; `Change font size (Zoom) with Ctrl+Mouse Wheel`]]></content>
+    <content type="text"><![CDATA[简介记录idea系配置 配置集配置页面(以下配置无特殊说明均是该页面)12菜单路径: File -&gt; Settings快捷键: Ctrl + Alt + S 修改字体大小12Editor -&gt; Font等宽字体: Courier New 字体大小滚轮调节1Editor -&gt; General -&gt; Change font size (Zoom) with Ctrl+Mouse Wheel]]></content>
       <categories>
         <category>idea</category>
       </categories>
