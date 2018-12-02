@@ -108,19 +108,19 @@
 
 
 
-  <meta name="description" content="centos容器镜像跑consul集群docker相关命令1234567891011121314获取dockerhub镜像(不带版本拉取lastest)docker pull centos:&amp;lt;version&amp;gt;创建docker镜像docker build -t mydocker:0.1 .查看当前镜像docker image ls运行容器docker run -it -d --privi">
-<meta name="keywords" content="docker consul">
+  <meta name="description" content="centos容器镜像跑consul集群">
+<meta name="keywords" content="docker,consul">
 <meta property="og:type" content="article">
 <meta property="og:title" content="centos容器镜像跑consul集群">
 <meta property="og:url" content="http://yoursite.com/2018/12/02/centos容器镜像跑consul集群/index.html">
 <meta property="og:site_name" content="xyx&#39;s blog">
-<meta property="og:description" content="centos容器镜像跑consul集群docker相关命令1234567891011121314获取dockerhub镜像(不带版本拉取lastest)docker pull centos:&amp;lt;version&amp;gt;创建docker镜像docker build -t mydocker:0.1 .查看当前镜像docker image ls运行容器docker run -it -d --privi">
+<meta property="og:description" content="centos容器镜像跑consul集群">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/2018/12/02/centos容器镜像跑consul集群/attachments/e0ae0c92.png">
-<meta property="og:updated_time" content="2018-12-02T07:58:07.835Z">
+<meta property="og:updated_time" content="2018-12-02T08:01:53.327Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="centos容器镜像跑consul集群">
-<meta name="twitter:description" content="centos容器镜像跑consul集群docker相关命令1234567891011121314获取dockerhub镜像(不带版本拉取lastest)docker pull centos:&amp;lt;version&amp;gt;创建docker镜像docker build -t mydocker:0.1 .查看当前镜像docker image ls运行容器docker run -it -d --privi">
+<meta name="twitter:description" content="centos容器镜像跑consul集群">
 <meta name="twitter:image" content="http://yoursite.com/2018/12/02/centos容器镜像跑consul集群/attachments/e0ae0c92.png">
 
 
@@ -370,7 +370,7 @@
                 
               
 
-              <time title="创建时间：2018-12-02 15:57:29 / 修改时间：15:58:07" itemprop="dateCreated datePublished" datetime="2018-12-02T15:57:29+08:00">2018-12-02</time>
+              <time title="创建时间：2018-12-02 15:57:29 / 修改时间：16:01:53" itemprop="dateCreated datePublished" datetime="2018-12-02T15:57:29+08:00">2018-12-02</time>
             
 
             
@@ -454,7 +454,8 @@
       
 
       
-        <h3 id="centos容器镜像跑consul集群"><a href="#centos容器镜像跑consul集群" class="headerlink" title="centos容器镜像跑consul集群"></a>centos容器镜像跑consul集群</h3><h4 id="docker相关命令"><a href="#docker相关命令" class="headerlink" title="docker相关命令"></a>docker相关命令</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">获取dockerhub镜像(不带版本拉取lastest)</span><br><span class="line">docker pull centos:&lt;version&gt;</span><br><span class="line"></span><br><span class="line">创建docker镜像</span><br><span class="line">docker build -t mydocker:0.1 .</span><br><span class="line"></span><br><span class="line">查看当前镜像</span><br><span class="line">docker image ls</span><br><span class="line"></span><br><span class="line">运行容器</span><br><span class="line">docker run -it -d --privileged=true -p 8501:8500 mydocker:0.1 /usr/sbin/init</span><br><span class="line"></span><br><span class="line">查看容器</span><br><span class="line">docker ps -a</span><br></pre></td></tr></table></figure>
+        <h3 id="centos容器镜像跑consul集群"><a href="#centos容器镜像跑consul集群" class="headerlink" title="centos容器镜像跑consul集群"></a>centos容器镜像跑consul集群</h3><a id="more"></a>
+<h4 id="docker相关命令"><a href="#docker相关命令" class="headerlink" title="docker相关命令"></a>docker相关命令</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">获取dockerhub镜像(不带版本拉取lastest)</span><br><span class="line">docker pull centos:&lt;version&gt;</span><br><span class="line"></span><br><span class="line">创建docker镜像</span><br><span class="line">docker build -t mydocker:0.1 .</span><br><span class="line"></span><br><span class="line">查看当前镜像</span><br><span class="line">docker image ls</span><br><span class="line"></span><br><span class="line">运行容器</span><br><span class="line">docker run -it -d --privileged=true -p 8501:8500 mydocker:0.1 /usr/sbin/init</span><br><span class="line"></span><br><span class="line">查看容器</span><br><span class="line">docker ps -a</span><br></pre></td></tr></table></figure>
 <h4 id="安装docker-ce"><a href="#安装docker-ce" class="headerlink" title="安装docker-ce"></a>安装docker-ce</h4><p>根据系统版本选择合适的docker-ce版本，最新的docker-ce版本可能不适配老的centos版本。</p>
 <p>查看docker-ce可用版本：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]# yum list docker-ce --showduplicates | sort -r</span><br><span class="line">已加载插件：fastestmirror</span><br><span class="line">已安装的软件包</span><br><span class="line">可安装的软件包</span><br><span class="line"> * updates: mirrors.cqu.edu.cn</span><br><span class="line">Loading mirror speeds from cached hostfile</span><br><span class="line"> * extras: mirror.bit.edu.cn</span><br><span class="line">docker-ce.x86_64            3:18.09.0-3.el7                    docker-ce-stable</span><br><span class="line">docker-ce.x86_64            3:18.09.0-3.el7                    @docker-ce-stable</span><br><span class="line">docker-ce.x86_64            18.06.1.ce-3.el7                   docker-ce-stable</span><br><span class="line">docker-ce.x86_64            18.06.0.ce-3.el7                   docker-ce-stable</span><br><span class="line">docker-ce.x86_64            18.03.1.ce-1.el7.centos            docker-ce-stable</span><br><span class="line">docker-ce.x86_64            18.03.0.ce-1.el7.centos            docker-ce-stable</span><br><span class="line">docker-ce.x86_64            17.12.1.ce-1.el7.centos            docker-ce-stable</span><br><span class="line">docker-ce.x86_64            17.12.0.ce-1.el7.centos            docker-ce-stable</span><br><span class="line">docker-ce.x86_64            17.09.1.ce-1.el7.centos            docker-ce-stable</span><br><span class="line">docker-ce.x86_64            17.09.0.ce-1.el7.centos            docker-ce-stable</span><br><span class="line">docker-ce.x86_64            17.06.2.ce-1.el7.centos            docker-ce-stable</span><br><span class="line">docker-ce.x86_64            17.06.1.ce-1.el7.centos            docker-ce-stable</span><br><span class="line">docker-ce.x86_64            17.06.0.ce-1.el7.centos            docker-ce-stable</span><br><span class="line">docker-ce.x86_64            17.03.3.ce-1.el7                   docker-ce-stable</span><br><span class="line">docker-ce.x86_64            17.03.2.ce-1.el7.centos            docker-ce-stable</span><br><span class="line">docker-ce.x86_64            17.03.1.ce-1.el7.centos            docker-ce-stable</span><br><span class="line">docker-ce.x86_64            17.03.0.ce-1.el7.centos            docker-ce-stable</span><br><span class="line"> * base: mirrors.cqu.edu.cn</span><br></pre></td></tr></table></figure>
@@ -516,7 +517,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/docker-consul/" rel="tag"># docker consul</a>
+            <a href="/tags/docker/" rel="tag"># docker</a>
+          
+            <a href="/tags/consul/" rel="tag"># consul</a>
           
         </div>
       
@@ -657,7 +660,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">5</span>
+                      
+                    
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
