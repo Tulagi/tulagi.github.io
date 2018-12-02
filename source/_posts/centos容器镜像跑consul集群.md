@@ -181,7 +181,7 @@ caca6a79a152        mydocker:1.0        "/usr/sbin/init"    3 days ago          
 
 consul UI
 
-![consul UI](centos容器镜像跑consul集群/e0ae0c92.png)
+![e0ae0c92.png](centos容器镜像跑consul集群/e0ae0c92.png)
 
 #### 使用docker-compose编排容器
 
@@ -273,3 +273,4 @@ docker_consul_1   /usr/sbin/init   Up      0.0.0.0:8501->8500/tcp
 docker_consul_2   /usr/sbin/init   Up      0.0.0.0:8502->8500/tcp
 docker_consul_3   /usr/sbin/init   Up      0.0.0.0:8503->8500/tcp
 ```
+
