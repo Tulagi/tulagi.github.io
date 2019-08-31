@@ -112,23 +112,23 @@
 <meta name="keywords" content="docker,consul,centos">
 <meta property="og:type" content="article">
 <meta property="og:title" content="centos容器镜像跑consul集群">
-<meta property="og:url" content="http://yoursite.com/2019/08/31/centos容器镜像跑consul集群/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/11/30/centos容器镜像跑consul集群/index.html">
 <meta property="og:site_name" content="xyx&#39;s blog">
 <meta property="og:description" content="centos容器镜像跑consul集群">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/2019/08/31/centos容器镜像跑consul集群/e0ae0c92.png">
-<meta property="og:updated_time" content="2019-08-31T13:31:22.188Z">
+<meta property="og:image" content="http://yoursite.com/2018/11/30/centos容器镜像跑consul集群/e0ae0c92.png">
+<meta property="og:updated_time" content="2019-08-31T15:18:16.177Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="centos容器镜像跑consul集群">
 <meta name="twitter:description" content="centos容器镜像跑consul集群">
-<meta name="twitter:image" content="http://yoursite.com/2019/08/31/centos容器镜像跑consul集群/e0ae0c92.png">
+<meta name="twitter:image" content="http://yoursite.com/2018/11/30/centos容器镜像跑consul集群/e0ae0c92.png">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/08/31/centos容器镜像跑consul集群/">
+  <link rel="canonical" href="http://yoursite.com/2018/11/30/centos容器镜像跑consul集群/">
 
 
 
@@ -328,7 +328,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/31/centos容器镜像跑consul集群/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/30/centos容器镜像跑consul集群/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="">
@@ -370,9 +370,25 @@
                 
               
 
-              <time title="创建时间：2019-08-31 21:31:22" itemprop="dateCreated datePublished" datetime="2019-08-31T21:31:22+08:00">2019-08-31</time>
+              <time title="创建时间：2018-11-30 14:44:58" itemprop="dateCreated datePublished" datetime="2018-11-30T14:44:58+08:00">2018-11-30</time>
             
 
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-08-31 23:18:16" itemprop="dateModified" datetime="2019-08-31T23:18:16+08:00">2019-08-31</time>
+              
             
           </span>
 
@@ -466,7 +482,7 @@
 <p>查看consul集群</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]# docker ps -a</span><br><span class="line">CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS                    NAMES</span><br><span class="line">9bb07c7d4b3a        mydocker:1.0        &quot;/usr/sbin/init&quot;    3 days ago          Up 3 minutes        0.0.0.0:8502-&gt;8500/tcp   consul_0.2</span><br><span class="line">caca6a79a152        mydocker:1.0        &quot;/usr/sbin/init&quot;    3 days ago          Up 3 minutes        0.0.0.0:8501-&gt;8500/tcp   consul_0.3</span><br><span class="line">70e3e2f90afb        mydocker:1.0        &quot;/usr/sbin/init&quot;    3 days ago          Up 3 minutes        0.0.0.0:8500-&gt;8500/tcp   consul_0.4</span><br></pre></td></tr></table></figure>
 <p>consul UI</p>
-<p><img src="/2019/08/31/centos容器镜像跑consul集群/e0ae0c92.png" alt="e0ae0c92.png"></p>
+<p><img src="/2018/11/30/centos容器镜像跑consul集群/e0ae0c92.png" alt="e0ae0c92.png"></p>
 <h4 id="使用docker-compose编排容器"><a href="#使用docker-compose编排容器" class="headerlink" title="使用docker-compose编排容器"></a>使用docker-compose编排容器</h4><p>安装dockercompose</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]# curl -L &quot;https://github.com/docker/compose/releases/download/1.23.1/docker-compose-$(uname -s)-$(uname -m)&quot; -o /usr/local/bin/docker-compose</span><br><span class="line"></span><br><span class="line">[root@localhost ~]# chmod +x /usr/local/bin/docker-compose</span><br><span class="line"></span><br><span class="line">[root@localhost ~]# docker-compose --version</span><br><span class="line">docker-compose version 1.23.2, build 1110ad01</span><br></pre></td></tr></table></figure>
 <p>参考：<a href="https://docs.docker.com/compose/install/" target="_blank" rel="noopener">Install Docker Compose | Docker Documentation</a></p>
@@ -515,17 +531,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/08/31/git操作记录/" rel="next" title="git操作记录">
-                <i class="fa fa-chevron-left"></i> git操作记录
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/08/31/Hexo博客管理流程/" rel="prev" title="Hexo博客管理流程">
+              <a href="/2018/12/02/Hexo博客管理流程/" rel="prev" title="Hexo博客管理流程">
                 Hexo博客管理流程 <i class="fa fa-chevron-right"></i>
               </a>
             
