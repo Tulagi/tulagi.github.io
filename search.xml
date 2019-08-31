@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[折叠长句]]></title>
+    <url>%2F2019%2F08%2F31%2F%E6%8A%98%E5%8F%A0%E9%95%BF%E5%8F%A5%2F</url>
+    <content type="text"><![CDATA[折叠长句 折叠长句Boostnote是对应markdown记法的记事本，信息排序・共享的一种工具。- Features - · Search function to find memos in one shot· Supports markdown notation · Support for Mac, Windows, Linux, iOS, Android · Export and import to Plain text (.txt), Markdown (.md) format · Supports PDF saving · Can be used offline · Synchronize to dropbox etc. with setting · Supports theme colors and numerous fonts]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[测试hexo发布]]></title>
+    <url>%2F2019%2F08%2F31%2F%E6%B5%8B%E8%AF%95hexo%E5%8F%91%E5%B8%83%2F</url>
+    <content type="text"><![CDATA[测试hexo发布 测试hexo发布]]></content>
+      <tags>
+        <tag>hexo</tag>
+        <tag>test</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hexo博客管理流程]]></title>
     <url>%2F2019%2F08%2F31%2FHexo%E5%8D%9A%E5%AE%A2%E7%AE%A1%E7%90%86%E6%B5%81%E7%A8%8B%2F</url>
     <content type="text"><![CDATA[Hexo博客管理流程 Hexo博客管理流程 记录下使用hexo写博客的流程 Hexo静态博客写作与发布流程： 在 Boostnote 中写作并管理笔记，点滴、零碎的东西先放到Draft目录中； 执行 hexo new post {文章标题} 生成新博客文件； 将本地博客内容复制到新生成博客文件的正文处(more以下)，博客的title就是本地博客的标题(hexo new生成的文件名)，more分隔符以上简单描述该文信息，并填写tag和categories，boostnote中也打了相同的tag； 将本地博客涉及的图片复制到文章标题同名的文件夹中，并全局替换图片文件名前缀路径为文章标题目录名； 执行 hexo clean &amp;&amp; hexo g &amp;&amp; hexo d 发布静态博客。 hexo new &#39;title&#39; -&gt; 拷贝全文 -&gt; 删除标题 -&gt; 写tag -&gt; 写categories -&gt; 替换图片路径 -&gt; 发布后续修改麻烦的，在boostnote中修改了，还得替换图片路径，boostnote本身又不支持修改文章id和文章同名附件id后台搞个脚本自动化完成这些工作吧记住：定期备份 123456789101112--- Hexo头 标题 (#) 分类 标签 时间--- 描述 (&gt;)&lt;!-- more --&gt; 正文 (###) Hexo文件上传备份流程： 下载hexo分支，该分支保存的是hexo博客的业务文件： 1git clone -b hexo git@github.com:Tulagi/tulagi.github.io.git branch_of_hexo 执行 backup_hexo.sh 上传本地hexo博客业务文件： 1234567891011121314151617181920212223242526272829303132#!/bin/bashhexo_root_dir=/home/hexohexo_src_dir=$&#123;hexo_root_dir&#125;/hexohexo_dest_dir=$&#123;hexo_root_dir&#125;/hexo_backupcd $&#123;hexo_root_dir&#125;[ -d $&#123;hexo_dest_dir&#125; ] &amp;&amp; &#123; echo &quot;INFO: hexo backup dir exist&quot;; exit 1; &#125;# 1. 下载hexo分支文件：git clone -b hexo git@github.com:Tulagi/tulagi.github.io.git $&#123;hexo_dest_dir&#125;# 2. 删除当前该分支所有文件：cd $&#123;hexo_dest_dir&#125;git rm -r $&#123;hexo_dest_dir&#125;/&#123;_config.yml,.gitignore,node_modules.tree,package.json,package-lock.json,scaffolds,source,themes.tar.gz&#125;# 3. 复制本地hexo目录文件：cp -r $&#123;hexo_src_dir&#125;/&#123;_config.yml,.gitignore,package.json,package-lock.json,scaffolds,source&#125; $&#123;hexo_dest_dir&#125;# 4. 记录 node_modules 中的模块tree -a $&#123;hexo_src_dir&#125;/node_modules/ &gt; $&#123;hexo_dest_dir&#125;/node_modules.treetree -a $&#123;hexo_src_dir&#125;/node_modules/.bin &gt;&gt; $&#123;hexo_dest_dir&#125;/node_modules.tree# 5. 备份主题cd $&#123;hexo_src_dir&#125;tar -czvf $&#123;hexo_dest_dir&#125;/themes.tar.gz themescd -# 6. 上传git add -Agit commit -m &quot;$(date)&quot;git push origin hexo:hexo]]></content>
@@ -8,16 +22,6 @@
         <tag>hexo</tag>
         <tag>blog</tag>
       </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[vim常用操作]]></title>
-    <url>%2F2019%2F08%2F31%2Fvim%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%2F</url>
-    <content type="text"><![CDATA[vim常用操作 vim常用操作 VIM常用操作记录 跳转到指定行12行号 + gg:行号 + Enter 设置原样粘贴，不会自动缩进1set paste]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[折叠长句]]></title>
-    <url>%2F2019%2F08%2F31%2F%E6%8A%98%E5%8F%A0%E9%95%BF%E5%8F%A5%2F</url>
-    <content type="text"><![CDATA[折叠长句 折叠长句Boostnote是对应markdown记法的记事本，信息排序・共享的一种工具。- Features - · Search function to find memos in one shot· Supports markdown notation · Support for Mac, Windows, Linux, iOS, Android · Export and import to Plain text (.txt), Markdown (.md) format · Supports PDF saving · Can be used offline · Synchronize to dropbox etc. with setting · Supports theme colors and numerous fonts]]></content>
   </entry>
   <entry>
     <title><![CDATA[centos容器镜像跑consul集群]]></title>
@@ -33,6 +37,14 @@
     <title><![CDATA[git操作记录]]></title>
     <url>%2F2019%2F08%2F31%2Fgit%E6%93%8D%E4%BD%9C%E8%AE%B0%E5%BD%95%2F</url>
     <content type="text"><![CDATA[git操作记录 git操作记录删除远端分支12git push origin :branchgit push origin --delete branch]]></content>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[vim常用操作]]></title>
+    <url>%2F2019%2F08%2F31%2Fvim%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%2F</url>
+    <content type="text"><![CDATA[vim常用操作 vim常用操作 VIM常用操作记录 跳转到指定行12行号 + gg:行号 + Enter 设置原样粘贴，不会自动缩进1set paste]]></content>
   </entry>
   <entry>
     <title><![CDATA[2019]]></title>
