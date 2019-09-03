@@ -1,29 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[2019 副本]]></title>
-    <url>%2F2019%2F09%2F02%2F2019%20%E5%89%AF%E6%9C%AC%2F</url>
-    <content type="text"><![CDATA[2019 副本 20192019很关键！当前存在的问题： 早起 沉不下去，心有旁骛 没有要事优先，总是搞些杂七杂八的东西消磨了时间 工作方法不对路，及时反馈、邮件总结结论、多记录多沟通 做事的流程很乱，各种事情如何记录需要梳理出来，有了流程，那就坚定执行，然后反馈优化 我应该怎么做 列出来，把所有要做的、没做的、想做的、没做好的事，大大小小全列出来 技术相关 技术是立身之本啊 当前可以围绕工作深钻技术 列一列工作中需要那些：Java、consul、python、rpm、spec、nginx 列一列基础的一些技术能力：http、https、ssl、ssh、rpc、nginx、tomcat 英语 良性循环起来呀原地踏步 不进则退 身边的人都上进得很，进步很大，你要多学习啊，和自己比一把技术三步骤 学架构 读经典计算储存网络]]></content>
-      <categories>
-        <category>2019</category>
-      </categories>
-      <tags>
-        <tag>2019</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[测试hexo发布]]></title>
-    <url>%2F2019%2F08%2F31%2F%E6%B5%8B%E8%AF%95hexo%E5%8F%91%E5%B8%83%2F</url>
-    <content type="text"><![CDATA[测试hexo发布 测试hexo发布]]></content>
-      <categories>
-        <category>hexo - test</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>test</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Markdown语法]]></title>
     <url>%2F2019%2F08%2F24%2FMarkdown%E8%AF%AD%E6%B3%95%2F</url>
     <content type="text"><![CDATA[Markdown语法 Markdown语法折叠长句Boostnote是对应markdown记法的记事本，信息排序・共享的一种工具。- Features - · Search function to find memos in one shot· Supports markdown notation · Support for Mac, Windows, Linux, iOS, Android · Export and import to Plain text (.txt), Markdown (.md) format · Supports PDF saving · Can be used offline · Synchronize to dropbox etc. with setting · Supports theme colors and numerous fonts]]></content>
@@ -32,17 +9,6 @@
       </categories>
       <tags>
         <tag>markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[2019]]></title>
-    <url>%2F2019%2F02%2F27%2F2019%2F</url>
-    <content type="text"><![CDATA[2019 20192019很关键！当前存在的问题： 早起 沉不下去，心有旁骛 没有要事优先，总是搞些杂七杂八的东西消磨了时间 工作方法不对路，及时反馈、邮件总结结论、多记录多沟通 做事的流程很乱，各种事情如何记录需要梳理出来，有了流程，那就坚定执行，然后反馈优化 我应该怎么做 列出来，把所有要做的、没做的、想做的、没做好的事，大大小小全列出来 技术相关 技术是立身之本啊 当前可以围绕工作深钻技术 列一列工作中需要那些：Java、consul、python、rpm、spec、nginx 列一列基础的一些技术能力：http、https、ssl、ssh、rpc、nginx、tomcat 英语 良性循环起来呀原地踏步 不进则退 身边的人都上进得很，进步很大，你要多学习啊，和自己比一把技术三步骤 学架构 读经典计算储存网络]]></content>
-      <categories>
-        <category>2019</category>
-      </categories>
-      <tags>
-        <tag>2019</tag>
       </tags>
   </entry>
   <entry>
