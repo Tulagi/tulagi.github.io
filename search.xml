@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[一些工具]]></title>
+    <url>%2F2020%2F05%2F04%2F%E4%B8%80%E4%BA%9B%E5%B7%A5%E5%85%B7%2F</url>
+    <content type="text"><![CDATA[一些工具 一些工具笔记Boostnote 效率工具autohotkey 自动完成等everything 搜索Wgestures 手势snipaste 截图 chrome插件 vim模拟插件: vimium tab休眠节省内存: the-great-suspender]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[python小结]]></title>
+    <url>%2F2020%2F05%2F04%2Fpython%E5%B0%8F%E7%BB%93%2F</url>
+    <content type="text"><![CDATA[python小结]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[FAQ]]></title>
+    <url>%2F2020%2F05%2F04%2FFAQ%2F</url>
+    <content type="text"><![CDATA[FAQ FAQ各种遇到的问题及解决之道。 windows下打开git-bash执行python卡主： 在git-bash下用winpty python执行进入python。]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[Markdown语法]]></title>
     <url>%2F2019%2F08%2F24%2FMarkdown%E8%AF%AD%E6%B3%95%2F</url>
     <content type="text"><![CDATA[Markdown语法 Markdown语法折叠长句Boostnote是对应markdown记法的记事本，信息排序・共享的一种工具。- Features - · Search function to find memos in one shot· Supports markdown notation · Support for Mac, Windows, Linux, iOS, Android · Export and import to Plain text (.txt), Markdown (.md) format · Supports PDF saving · Can be used offline · Synchronize to dropbox etc. with setting · Supports theme colors and numerous fonts]]></content>
@@ -41,8 +56,8 @@
         <category>blog</category>
       </categories>
       <tags>
-        <tag>hexo</tag>
         <tag>blog</tag>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
