@@ -108,18 +108,18 @@
 
 
 
-  <meta name="description" content="Hexo博客管理流程">
-<meta name="keywords" content="blog,hexo">
+  <meta name="description" content="Hexo博客管理流程Hexo静态博客写作与发布流程： 在 Boostnote 中写作并管理笔记，点滴、零碎的东西先放到Draft目录中； 执行 hexo new post {文章标题} 生成新博客文件； 将本地博客内容复制到新生成博客文件的正文处(more以下)，博客的title就是本地博客的标题(hexo new生成的文件名)，more分隔符以上简单描述该文信息，并填写tag和categorie">
+<meta name="keywords" content="hexo,blog">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo博客管理流程">
 <meta property="og:url" content="http://yoursite.com/2018/12/02/Hexo博客管理流程/index.html">
 <meta property="og:site_name" content="xyx&#39;s blog">
-<meta property="og:description" content="Hexo博客管理流程">
+<meta property="og:description" content="Hexo博客管理流程Hexo静态博客写作与发布流程： 在 Boostnote 中写作并管理笔记，点滴、零碎的东西先放到Draft目录中； 执行 hexo new post {文章标题} 生成新博客文件； 将本地博客内容复制到新生成博客文件的正文处(more以下)，博客的title就是本地博客的标题(hexo new生成的文件名)，more分隔符以上简单描述该文信息，并填写tag和categorie">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-05-07T14:50:27.193Z">
+<meta property="og:updated_time" content="2020-05-08T17:21:03.849Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo博客管理流程">
-<meta name="twitter:description" content="Hexo博客管理流程">
+<meta name="twitter:description" content="Hexo博客管理流程Hexo静态博客写作与发布流程： 在 Boostnote 中写作并管理笔记，点滴、零碎的东西先放到Draft目录中； 执行 hexo new post {文章标题} 生成新博客文件； 将本地博客内容复制到新生成博客文件的正文处(more以下)，博客的title就是本地博客的标题(hexo new生成的文件名)，more分隔符以上简单描述该文信息，并填写tag和categorie">
 
 
 
@@ -414,7 +414,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">4.3k</span>
+                <span title="本文字数">4.2k</span>
               
 
               
@@ -448,11 +448,7 @@
       
 
       
-        <blockquote>
-<p>Hexo博客管理流程</p>
-</blockquote>
-<a id="more"></a>
-<h1 id="Hexo博客管理流程"><a href="#Hexo博客管理流程" class="headerlink" title="Hexo博客管理流程"></a>Hexo博客管理流程</h1><h3 id="Hexo静态博客写作与发布流程："><a href="#Hexo静态博客写作与发布流程：" class="headerlink" title="Hexo静态博客写作与发布流程："></a>Hexo静态博客写作与发布流程：</h3><ol>
+        <h1 id="Hexo博客管理流程"><a href="#Hexo博客管理流程" class="headerlink" title="Hexo博客管理流程"></a>Hexo博客管理流程</h1><h2 id="Hexo静态博客写作与发布流程："><a href="#Hexo静态博客写作与发布流程：" class="headerlink" title="Hexo静态博客写作与发布流程："></a>Hexo静态博客写作与发布流程：</h2><ol>
 <li>在 <code>Boostnote</code> 中写作并管理笔记，点滴、零碎的东西先放到Draft目录中；</li>
 <li>执行 <code>hexo new post {文章标题}</code> 生成新博客文件；</li>
 <li>将本地博客内容复制到新生成博客文件的正文处(more以下)，博客的title就是本地博客的标题(hexo new生成的文件名)，more分隔符以上简单描述该文信息，并填写tag和categories，boostnote中也打了相同的tag；</li>
@@ -463,7 +459,7 @@
 <p><code>hexo new &#39;title&#39;</code> -&gt; <code>拷贝全文</code> -&gt; <code>删除标题</code> -&gt; <code>写tag</code> -&gt; <code>写categories</code> -&gt; <code>替换图片路径</code> -&gt; <code>发布</code><br>后续修改麻烦的，在boostnote中修改了，还得替换图片路径，boostnote本身又不支持修改文章id和文章同名附件id<br>后台搞个脚本自动化完成这些工作吧<br>记住：定期备份</p>
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">--- Hexo头</span><br><span class="line">    标题 (#)</span><br><span class="line">    分类</span><br><span class="line">    标签</span><br><span class="line">    时间</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">    描述 (&gt;)</span><br><span class="line"></span><br><span class="line">&lt;!-- more --&gt;</span><br><span class="line"></span><br><span class="line">    正文 (###)</span><br></pre></td></tr></table></figure>
-<h3 id="Hexo文件上传备份流程："><a href="#Hexo文件上传备份流程：" class="headerlink" title="Hexo文件上传备份流程："></a>Hexo文件上传备份流程：</h3><ol>
+<h2 id="Hexo文件上传备份流程："><a href="#Hexo文件上传备份流程：" class="headerlink" title="Hexo文件上传备份流程："></a>Hexo文件上传备份流程：</h2><ol>
 <li><p>下载hexo分支，该分支保存的是hexo博客的业务文件：</p>
  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone -b hexo git@github.com:Tulagi/tulagi.github.io.git branch_of_hexo</span><br></pre></td></tr></table></figure>
 </li>
@@ -471,7 +467,7 @@
  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/bash</span><br><span class="line"></span><br><span class="line">hexo_root_dir=/home/hexo</span><br><span class="line">hexo_src_dir=$&#123;hexo_root_dir&#125;/hexo</span><br><span class="line">hexo_dest_dir=$&#123;hexo_root_dir&#125;/hexo_backup</span><br><span class="line"></span><br><span class="line">cd $&#123;hexo_root_dir&#125;</span><br><span class="line">[ -d $&#123;hexo_dest_dir&#125; ] &amp;&amp; &#123; echo &quot;INFO: hexo backup dir exist&quot;; exit 1; &#125;</span><br><span class="line"></span><br><span class="line"># 1. 下载hexo分支文件：</span><br><span class="line">git clone -b hexo git@github.com:Tulagi/tulagi.github.io.git $&#123;hexo_dest_dir&#125;</span><br><span class="line"></span><br><span class="line"># 2. 删除当前该分支所有文件：</span><br><span class="line">cd $&#123;hexo_dest_dir&#125;</span><br><span class="line">git rm -r $&#123;hexo_dest_dir&#125;/&#123;_config.yml,.gitignore,node_modules.tree,package.json,package-lock.json,scaffolds,source,themes.tar.gz&#125;</span><br><span class="line"></span><br><span class="line"># 3. 复制本地hexo目录文件：</span><br><span class="line">cp -r $&#123;hexo_src_dir&#125;/&#123;_config.yml,.gitignore,package.json,package-lock.json,scaffolds,source&#125; $&#123;hexo_dest_dir&#125;</span><br><span class="line"></span><br><span class="line"># 4. 记录 node_modules 中的模块</span><br><span class="line">tree -a $&#123;hexo_src_dir&#125;/node_modules/ &gt; $&#123;hexo_dest_dir&#125;/node_modules.tree</span><br><span class="line">tree -a $&#123;hexo_src_dir&#125;/node_modules/.bin &gt;&gt; $&#123;hexo_dest_dir&#125;/node_modules.tree</span><br><span class="line"></span><br><span class="line"># 5. 备份主题</span><br><span class="line">cd $&#123;hexo_src_dir&#125;</span><br><span class="line">tar -czvf $&#123;hexo_dest_dir&#125;/themes.tar.gz themes</span><br><span class="line">cd -</span><br><span class="line"></span><br><span class="line"># 6. 上传</span><br><span class="line">git add -A</span><br><span class="line">git commit -m &quot;$(date)&quot;</span><br><span class="line">git push origin hexo:hexo</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<h3 id="精简流程，没上面那么麻烦"><a href="#精简流程，没上面那么麻烦" class="headerlink" title="精简流程，没上面那么麻烦"></a>精简流程，没上面那么麻烦</h3><ol>
+<h2 id="精简流程，没上面那么麻烦"><a href="#精简流程，没上面那么麻烦" class="headerlink" title="精简流程，没上面那么麻烦"></a>精简流程，没上面那么麻烦</h2><ol>
 <li>写文档</li>
 <li>上传github</li>
 <li>执行脚本发布<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/bash</span><br><span class="line"></span><br><span class="line">outDir=$1</span><br><span class="line">boostnote_root=$2</span><br><span class="line"></span><br><span class="line">if [ ! -d &quot;$outDir&quot; ]; then</span><br><span class="line">    mkdir &quot;$outDir&quot;</span><br><span class="line">fi</span><br><span class="line"></span><br><span class="line">for fileName in `ls $&#123;boostnote_root&#125;/notes/*.cson`; do</span><br><span class="line"></span><br><span class="line">    id=`echo $&#123;fileName&#125; | sed -e &apos;s%.*/\(.*\)\.cson%\1%p&apos; | head -1`</span><br><span class="line">    title=`sed -n &quot;/^title:/p&quot; &quot;$fileName&quot; | head -1 | sed -e &quot;s/title:\s\&quot;\(.*\)\&quot;$/\1/&quot;`</span><br><span class="line">    date=`sed -n &quot;/^createdAt:/p&quot; &quot;$fileName&quot; | head -1 | sed -e &quot;s/createdAt:\s\&quot;\(.*\)T\(.*\)\..*\&quot;$/\1 \2/&quot;`</span><br><span class="line">    tags=`sed -n &quot;/^tags:\s\[$/,/^\]$/p&quot; &quot;$fileName&quot; | sed &apos;1d&apos; | sed &apos;$d&apos; | sed &apos;s/[ &quot;]//g&apos; | sed &apos;s/^/  - /g&apos;`</span><br><span class="line">    categories=`echo $tags | head -1`</span><br><span class="line"></span><br><span class="line">    file=&quot;$outDir/$title.md&quot;</span><br><span class="line">    echo &quot;---&quot; &gt;&gt; $&#123;file&#125;</span><br><span class="line">    echo &quot;title: $&#123;title&#125;&quot; &gt;&gt; $&#123;file&#125;</span><br><span class="line">    echo &quot;categories:&quot; &gt;&gt; $&#123;file&#125;</span><br><span class="line">    echo &quot;$&#123;categories&#125;&quot; &gt;&gt; $&#123;file&#125;</span><br><span class="line">    echo &quot;tags:&quot; &gt;&gt; $&#123;file&#125;</span><br><span class="line">    echo &quot;$&#123;tags&#125;&quot; &gt;&gt; $&#123;file&#125;</span><br><span class="line">    echo &quot;date: $&#123;date&#125;&quot; &gt;&gt; $&#123;file&#125;</span><br><span class="line">    echo &quot;---&quot; &gt;&gt; $&#123;file&#125;</span><br><span class="line">    echo -e &quot;\n&quot; &gt;&gt; $&#123;file&#125;</span><br><span class="line">    echo &quot;&gt; $&#123;title&#125;&quot; &gt;&gt; $&#123;file&#125;</span><br><span class="line">    echo -e &quot;\n&quot; &gt;&gt; $&#123;file&#125;</span><br><span class="line">    echo &apos;&lt;!-- more --&gt;&apos; &gt;&gt; $&#123;file&#125;</span><br><span class="line">    echo -e &quot;\n&quot; &gt;&gt; $&#123;file&#125;</span><br><span class="line"></span><br><span class="line">    echo &quot;`sed -n &quot;/^content:\s\&apos;&apos;&apos;$/,/^\&apos;&apos;&apos;$/p&quot; $fileName | sed &apos;1d&apos; | sed &apos;$d&apos; | cut -b 3-`&quot; &gt;&gt; $&#123;file&#125;</span><br><span class="line"></span><br><span class="line">    sed -i &apos;s/\\\\/\\/g&apos; $&#123;file&#125;</span><br><span class="line">    sed -i &quot;s%Hexo博客管理流程/1%g&quot; $&#123;file&#125;</span><br><span class="line"></span><br><span class="line">    attachments_dir=$boostnote_root/attachments/$id</span><br><span class="line">    [ -d $attachments_dir ] &amp;&amp; mkdir -p $outDir/$title/ &amp;&amp; cp -r $attachments_dir/* $outDir/$title/</span><br><span class="line"></span><br><span class="line">    echo &quot;$title.md file created.&quot;</span><br><span class="line">done</span><br><span class="line"></span><br><span class="line">git pull origin master</span><br><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
@@ -497,9 +493,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/blog/" rel="tag"># blog</a>
-          
             <a href="/tags/hexo/" rel="tag"># hexo</a>
+          
+            <a href="/tags/blog/" rel="tag"># blog</a>
           
         </div>
       
@@ -686,7 +682,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo博客管理流程"><span class="nav-number">1.</span> <span class="nav-text">Hexo博客管理流程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo静态博客写作与发布流程："><span class="nav-number">1.0.1.</span> <span class="nav-text">Hexo静态博客写作与发布流程：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo文件上传备份流程："><span class="nav-number">1.0.2.</span> <span class="nav-text">Hexo文件上传备份流程：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#精简流程，没上面那么麻烦"><span class="nav-number">1.0.3.</span> <span class="nav-text">精简流程，没上面那么麻烦</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo博客管理流程"><span class="nav-number">1.</span> <span class="nav-text">Hexo博客管理流程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo静态博客写作与发布流程："><span class="nav-number">1.1.</span> <span class="nav-text">Hexo静态博客写作与发布流程：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo文件上传备份流程："><span class="nav-number">1.2.</span> <span class="nav-text">Hexo文件上传备份流程：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#精简流程，没上面那么麻烦"><span class="nav-number">1.3.</span> <span class="nav-text">精简流程，没上面那么麻烦</span></a></li></ol></li></ol></div>
             
 
           </div>
