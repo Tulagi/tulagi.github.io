@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[自动化集成工具]]></title>
+    <url>%2F2020%2F05%2F11%2F%E8%87%AA%E5%8A%A8%E5%8C%96%E9%9B%86%E6%88%90%E5%B7%A5%E5%85%B7%2F</url>
+    <content type="text"><![CDATA[自动化集成工具jenkinstravis ci]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[网络学习]]></title>
+    <url>%2F2020%2F05%2F11%2F%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%2F</url>
+    <content type="text"><![CDATA[网络学习二层、三层的理解二层交换、三层路由核心 -&gt; 汇聚 -&gt; 接入 -&gt; 主机 网络7/5/4模型]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[一些工具]]></title>
     <url>%2F2020%2F05%2F04%2F%E4%B8%80%E4%BA%9B%E5%B7%A5%E5%85%B7%2F</url>
-    <content type="text"><![CDATA[一些工具笔记Boostnote 效率工具autohotkey 自动完成等everything 搜索Wgestures 手势snipaste 截图 chrome插件 vim模拟插件: vimium tab休眠节省内存: the-great-suspender]]></content>
+    <content type="text"><![CDATA[一些工具笔记Boostnote效率工具autohotkey 自动完成等everything 搜索Wgestures 手势snipaste 截图chrome插件 vim模拟插件: vimium tab休眠节省内存: the-great-suspender]]></content>
   </entry>
   <entry>
     <title><![CDATA[python小结]]></title>
     <url>%2F2020%2F05%2F04%2Fpython%E5%B0%8F%E7%BB%93%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[python小结推导式列表推导式字典推导式python中无consant类型的变量原生无法实现不能修改某变量的功能 python单元测试库unittestpython线程池+队列模型]]></content>
   </entry>
   <entry>
     <title><![CDATA[FAQ]]></title>
@@ -18,7 +28,7 @@
   <entry>
     <title><![CDATA[Markdown语法]]></title>
     <url>%2F2019%2F08%2F24%2FMarkdown%E8%AF%AD%E6%B3%95%2F</url>
-    <content type="text"><![CDATA[Markdown语法折叠长句Boostnote是对应markdown记法的记事本，信息排序・共享的一种工具。- Features - · Search function to find memos in one shot· Supports markdown notation · Support for Mac, Windows, Linux, iOS, Android · Export and import to Plain text (.txt), Markdown (.md) format · Supports PDF saving · Can be used offline · Synchronize to dropbox etc. with setting · Supports theme colors and numerous fonts]]></content>
+    <content type="text"><![CDATA[Markdown语法折叠长句Boostnote是对应markdown记法的记事本，信息排序・共享的一种工具。- Features - · Search function to find memos in one shot· Supports markdown notation · Support for Mac, Windows, Linux, iOS, Android · Export and import to Plain text (.txt), Markdown (.md) format · Supports PDF saving · Can be used offline · Synchronize to dropbox etc. with setting · Supports theme colors and numerous fonts 表格123| 表头 | 表头 || --- | --- || aaa | bbb | html表示表格；1234567891011121314&lt;table&gt; &lt;thead&gt; &lt;tr&gt; &lt;th&gt;表头&lt;/th&gt; &lt;th&gt;表头&lt;/th&gt; &lt;/tr&gt; &lt;tbody&gt; &lt;tr&gt; &lt;th&gt;aaa&lt;/th&gt; &lt;th&gt;bbb&lt;/th&gt; &lt;/tr&gt; &lt;/tbody&gt; &lt;/thead&gt;&lt;/table&gt;]]></content>
       <categories>
         <category>markdown</category>
       </categories>
@@ -29,7 +39,7 @@
   <entry>
     <title><![CDATA[vim常用操作]]></title>
     <url>%2F2018%2F12%2F02%2Fvim%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%2F</url>
-    <content type="text"><![CDATA[vim常用操作跳转到指定行12行号 + gg:行号 + Enter 设置原样粘贴，不会自动缩进1set paste ##]]></content>
+    <content type="text"><![CDATA[vim常用操作跳转到指定行12行号 + gg:行号 + Enter 设置原样粘贴，不会自动缩进1set paste gvim多标签打开新文件gvim切换tab123map &lt;C-tab&gt; &lt;Esc&gt;:tabnext&lt;CR&gt;gt/gTctrl + PgUp/PgDn vimgrep结果上下翻12nnoremap &lt;silent&gt; &lt;C-n&gt; :cnext&lt;CR&gt;nnoremap &lt;silent&gt; &lt;C-p&gt; :cprevious&lt;CR&gt; gvim调整字体大小zoom.vim vim原生粘贴:set paste vim折叠vim中的各种模式进入选择模式：gh vim配置文件中各种映射命令的区别mapnmapvmapimapnoremapnnoremapvnoremapinoremap]]></content>
       <categories>
         <category>vim</category>
       </categories>
@@ -40,7 +50,7 @@
   <entry>
     <title><![CDATA[git操作记录]]></title>
     <url>%2F2018%2F12%2F02%2Fgit%E6%93%8D%E4%BD%9C%E8%AE%B0%E5%BD%95%2F</url>
-    <content type="text"><![CDATA[git操作记录删除远端分支12git push origin :branchgit push origin --delete branch]]></content>
+    <content type="text"><![CDATA[git操作记录删除远端分支12git push origin :branchgit push origin --delete branch git重命名远端分支git rename oldbranch newbranchgit push origin :oldbranchgit push -u origin newbranch:newbranch]]></content>
       <categories>
         <category>git</category>
       </categories>
