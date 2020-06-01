@@ -1,6 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Shell小结]]></title>
+    <url>%2F2020%2F06%2F01%2FShell%E5%B0%8F%E7%BB%93%2F</url>
+    <content type="text"><![CDATA[Shell小结]]></content>
+      <categories>
+        <category>编程语言</category>
+      </categories>
+      <tags>
+        <tag>编程语言</tag>
+        <tag>shell</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Lua小结]]></title>
+    <url>%2F2020%2F06%2F01%2FLua%E5%B0%8F%E7%BB%93%2F</url>
+    <content type="text"><![CDATA[Lua小结]]></content>
+      <categories>
+        <category>编程语言</category>
+      </categories>
+      <tags>
+        <tag>编程语言</tag>
+        <tag>lua</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Java小结]]></title>
+    <url>%2F2020%2F06%2F01%2FJava%E5%B0%8F%E7%BB%93%2F</url>
+    <content type="text"><![CDATA[Java小结]]></content>
+      <categories>
+        <category>编程语言</category>
+      </categories>
+      <tags>
+        <tag>编程语言</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[C小结]]></title>
+    <url>%2F2020%2F06%2F01%2FC%E5%B0%8F%E7%BB%93%2F</url>
+    <content type="text"><![CDATA[C小结]]></content>
+      <categories>
+        <category>编程语言</category>
+      </categories>
+      <tags>
+        <tag>编程语言</tag>
+        <tag>c</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[自动化集成工具]]></title>
     <url>%2F2020%2F05%2F11%2F%E8%87%AA%E5%8A%A8%E5%8C%96%E9%9B%86%E6%88%90%E5%B7%A5%E5%85%B7%2F</url>
     <content type="text"><![CDATA[自动化集成工具jenkinstravis ci]]></content>
@@ -16,9 +63,16 @@
     <content type="text"><![CDATA[一些工具笔记Boostnote效率工具autohotkey 自动完成等everything 搜索Wgestures 手势snipaste 截图chrome插件 vim模拟插件: vimium tab休眠节省内存: the-great-suspender]]></content>
   </entry>
   <entry>
-    <title><![CDATA[python小结]]></title>
-    <url>%2F2020%2F05%2F04%2Fpython%E5%B0%8F%E7%BB%93%2F</url>
-    <content type="text"><![CDATA[python小结推导式列表推导式字典推导式python中无consant类型的变量原生无法实现不能修改某变量的功能 python单元测试库unittestpython线程池+队列模型]]></content>
+    <title><![CDATA[Python小结]]></title>
+    <url>%2F2020%2F05%2F04%2FPython%E5%B0%8F%E7%BB%93%2F</url>
+    <content type="text"><![CDATA[Python小结推导式ss列表推导式字典推导式python中无consant类型的变量原生无法实现不能修改某变量的功能 python单元测试库unittestpython线程池+队列模型]]></content>
+      <categories>
+        <category>编程语言</category>
+      </categories>
+      <tags>
+        <tag>编程语言</tag>
+        <tag>python</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[FAQ]]></title>
@@ -66,8 +120,8 @@
         <category>blog</category>
       </categories>
       <tags>
-        <tag>hexo</tag>
         <tag>blog</tag>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
