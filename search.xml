@@ -38,7 +38,7 @@
   <entry>
     <title><![CDATA[C小结]]></title>
     <url>%2F2020%2F06%2F01%2FC%E5%B0%8F%E7%BB%93%2F</url>
-    <content type="text"><![CDATA[C小结]]></content>
+    <content type="text"><![CDATA[C小结基本语法 双引号引字符串，单引号引字符；12char a = &apos;a&apos;;char *a = &quot;a&quot;; // 字符串常量默认结尾有个看不见的&apos;\0&apos;；字符串用字符数组或字符指针存储 ## 常用的库123sqlitecJsonlibcurl]]></content>
       <categories>
         <category>编程语言</category>
       </categories>
@@ -120,8 +120,8 @@
         <category>blog</category>
       </categories>
       <tags>
-        <tag>blog</tag>
         <tag>hexo</tag>
+        <tag>blog</tag>
       </tags>
   </entry>
   <entry>
