@@ -153,6 +153,17 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[这是一个测试文章]]></title>
+    <url>%2F2020%2F06%2F20%2Fzhe-shi-yi-ge-ce-shi-wen-zhang%2F</url>
+    <content type="text"><![CDATA[这是一个测试文章 abc def 123 456]]></content>
+      <categories>
+        <category>test</category>
+      </categories>
+      <tags>
+        <tag>test</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[自动化集成工具]]></title>
     <url>%2F2020%2F06%2F20%2Fzi-dong-hua-ji-cheng-gong-ju%2F</url>
     <content type="text"><![CDATA[自动化集成工具jenkinstravis ci]]></content>
