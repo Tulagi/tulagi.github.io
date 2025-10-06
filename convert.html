@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WebM 转 MP4 转换器</title>
+    <style>
+      body { font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial; margin: 24px; }
+      .box { max-width: 720px; margin: 0 auto; border: 1px solid #ddd; border-radius: 8px; padding: 16px; }
+      button { padding: 8px 16px; border: none; border-radius: 4px; background: #2563eb; color: #fff; cursor: pointer; }
+      button:disabled { background: #999; cursor: not-allowed; }
+      .log { white-space: pre-wrap; background: #fafafa; border: 1px dashed #ddd; padding: 8px; border-radius: 4px; height: 200px; overflow: auto; }
+      .row { margin: 12px 0; }
+    </style>
+    <!-- FFmpeg.wasm 浏览器版本（使用本地资源） -->
+    <script src="/vendor/ffmpeg/ffmpeg.min.js"></script>
+  </head>
+  <body>
+    <div class="box">
+      <h2>WebM 转 MP4</h2>
+      <p>将项目中生成的 <code>/zen-demo.webm</code> 转为 <code>MP4</code>，适配国内平台。</p>
+
+      <div class="row">
+        <button id="run">开始转换</button>
+        <span id="status" style="margin-left:12px;color:#555;">就绪</span>
+      </div>
+
+      <div class="row">
+        <div id="log" class="log"></div>
+      </div>
+
+      <div class="row" id="result" style="display:none;">
+        <a id="download" download="zen-demo.mp4">下载 MP4 文件</a>
+      </div>
+    </div>
+
+    <script>
+      const logEl = document.getElementById('log');
+      const statusEl = document.getElementById('status');
+      const runBtn = document.getElementById('run');
+      const resultEl = document.getElementById('result');
+      const downloadEl = document.getElementById('download');
+
+      const appendLog = (msg) => {
+        logEl.textContent += msg + "\n";
+        logEl.scrollTop = logEl.scrollHeight;
+      };
+
+      const setStatus = (msg) => { statusEl.textContent = msg; };
+
+      runBtn.addEventListener('click', async () => {
+        runBtn.disabled = true;
+        setStatus('准备中...');
+        appendLog('[convert] 初始化 FFmpeg...');
+
+        try {
+          const { createFFmpeg, fetchFile } = FFmpeg;
+          const ffmpeg = createFFmpeg({
+            log: true,
+            corePath: '/vendor/ffmpeg/ffmpeg-core.js'
+          });
+
+          ffmpeg.setLogger(({ type, message }) => {
+            appendLog(`[ffmpeg:${type}] ${message}`);
+          });
+
+          setStatus('加载核心...');
+          await ffmpeg.load();
+          appendLog('[convert] 核心加载完成');
+
+          setStatus('获取 WebM...');
+          const resp = await fetch('/zen-demo.webm');
+          if (!resp.ok) throw new Error('无法获取 /zen-demo.webm');
+          const blob = await resp.blob();
+          const data = new Uint8Array(await blob.arrayBuffer());
+          ffmpeg.FS('writeFile', 'input.webm', data);
+          appendLog('[convert] 输入文件已写入内存');
+
+          setStatus('转码中...');
+          appendLog('[convert] 开始尝试使用 libx264 编码');
+          let ok = false;
+          let lastErr = null;
+          const variants = [
+            ['-y','-i','input.webm','-c:v','libx264','-preset','medium','-crf','23','-pix_fmt','yuv420p','-movflags','+faststart','-an','output.mp4'],
+            ['-y','-i','input.webm','-c:v','mpeg4','-q:v','5','-pix_fmt','yuv420p','-movflags','+faststart','-an','output.mp4']
+          ];
+          for (const args of variants) {
+            try {
+              await ffmpeg.run(...args);
+              ok = true;
+              break;
+            } catch (e) {
+              lastErr = e;
+              appendLog('[convert] 当前参数失败，尝试下一组: ' + args.join(' '));
+            }
+          }
+
+          if (!ok) throw lastErr || new Error('转码失败');
+
+          setStatus('导出 MP4...');
+          const mp4 = ffmpeg.FS('readFile', 'output.mp4');
+          const url = URL.createObjectURL(new Blob([mp4.buffer], { type: 'video/mp4' }));
+          downloadEl.href = url;
+          resultEl.style.display = 'block';
+          appendLog('[convert] 转码完成，可点击下载');
+          setStatus('完成');
+        } catch (err) {
+          console.error(err);
+          appendLog('[convert] 发生错误: ' + err.message);
+          setStatus('失败');
+        } finally {
+          runBtn.disabled = false;
+        }
+      });
+    </script>
+  </body>
+</html>
